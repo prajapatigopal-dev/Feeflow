@@ -1,0 +1,1028 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feeflow</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <style>
+      #nav-menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: transparent;
+        color: white;
+        transition: background-color 0.5s ease-in-out;
+      }
+
+      #nav-menu.scrolled {
+        background-color: white;
+        color: #374151;
+        --webkit-box-shadow: 3px 3px 15px 3px #cbd5e1;
+        -moz-box-shadow: 3px 3px 15px 3px #cbd5e1;
+        box-shadow: 3px 3px 15px 3px #cbd5e1;
+      }
+
+      @media (prefers-reduced-motion: no-preference) {
+        *,
+        ::before,
+        ::after {
+          animation-delay: -1ms !important;
+          animation-duration: 1ms !important;
+          animation-iteration-count: 1 !important;
+          background-attachment: initial !important;
+          scroll-behavior: smooth !important;
+        }
+      }
+    </style>
+</head>
+<body>
+    <header id="nav-menu" aria-label="navigation bar">
+        <div class="nav__container">
+          <div class="nav__start">
+            <a class="logo" href="index.html">
+              <img src="assets/feeflow-dark@2x.webp" width="" height="" alt="Inc Logo" />
+            </a>
+            <nav class="menu">
+              <ul class="menu__bar">
+                <li><a class="nav__link" href="index.html">Home</a></li>
+                <li><a class="nav__link" href="#features">Features</a></li>
+                <li><a class="nav__link" href="#solutions">Solutions</a></li>
+                <li><a class="nav__link" href="#why">Why Us</a></li>
+                <li><a class="nav__link" href="#pricing">Pricing</a></li>
+                <li><a class="nav__link" href="#testimonials">Testimonials</a></li>
+                <li><a class="nav__link" href="#screenshots">Screenshots</a></li>
+                <li><a class="nav__link" href="#about">About Us</a></li>
+              </ul>
+            </nav>
+          </div>
+      
+          <div class="nav__end">
+            <button id="hamburger" aria-label="Menu" aria-haspopup="true" aria-expanded="false">
+              <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+              <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+            </button>
+            <a href="#" class="login">Login</a>
+          </div>
+        </div>
+    </header>
+    <main>
+      <div class="hero">
+        <div class="hero__outer">
+          <div class="hero__text">
+            <h1 class="hero__header">Empowering Schools with Innovative Solutions</h1>
+            <p>India's Leading Cloud-Based School Management Software</p>
+            <div class="link__wrapper">
+              <a href="#" class="btn__link">30 Days Free Trial</a>
+              <a href="#" class="btn__link">Schedule a Demo</a>
+            </div>
+          </div>
+          <div class="hero__media">
+            <img src="assets/herox@2x.png" alt="">
+          </div>
+        </div>
+      </div>
+      <section>
+        <div class="container">
+          <div class="features">
+            <div class="features__text">
+              <h2>22+ Key Features & Modules</h2>
+              <p>Discover how these features enhance your experience, streamline tasks, and provide valuable functionality, enabling you to achieve your goals efficiently.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="features">
+        <div class="container">
+          <div class="grid__container">
+            <div class="grid__item">
+              <img src="assets/icons/student.png" alt="">
+              <h3>Student Management</h3>
+              <p>Efficiently manage student information, including enrollment, demographics, academic performance, and disciplinary records.</p>
+            </div>
+            <div class="grid__item">
+              <img src="assets/icons/parents.png" alt="">
+              <h3>Parents Management</h3>
+              <p>Collaboration with parents, providing them with access to their child's progress reports, attendance records, and important updates.</p>
+            </div>
+            <div class="grid__item">
+              <img src="assets/icons/staff.png" alt="">
+              <h3>Staff Management</h3>
+              <p>ffectively manage staff details, including personal information, qualifications, and employment history, ensuring smooth administration and organization.</p>
+            </div>
+            <div class="grid__item">
+              <img src="assets/icons/teacher.png" alt="">
+              <h3>Teacher Management</h3>
+              <p>Simplify teacher-related tasks, such as tracking teaching assignments, scheduling, performance evaluations, and professional development.</p>
+            </div>
+            <div class="grid__item">
+              <img src="assets/icons/attachment.png" alt="">
+              <h3>Attachments Book Management</h3>
+              <p>Easily manage and track the availability and borrowing of books and other educational resources in the school library.</p>
+            </div>
+            <div class="grid__item">
+              <img src="assets/icons/attendance.png" alt="">
+              <h3>Attendance Management</h3>
+              <p>Streamline attendance tracking and reporting, ensuring accurate records and facilitating efficient monitoring of student attendance.</p>
+            </div>
+            <div class="grid__item">
+              <img src="assets/icons/sms.png" alt="">
+              <h3>Bulk SMS and Email Management</h3>
+              <p>Facilitate communication with various stakeholders by enabling the sending of bulk SMS and emails, allowing for quick and effective information dissemination.</p>
+            </div>
+            <div class="grid__item">
+              <img src="assets/icons/id.png" alt="">
+              <h3>Card Management</h3>
+              <p>anage student identification cards, ensuring easy access control and efficient tracking of student movements within the school premises.</p>
+            </div>
+            <div class="grid__item">
+              <img src="assets/icons/certificate.png" alt="">
+              <h3>Certificate Management</h3>
+              <p>Streamline the process of issuing and managing certificates for various achievements and qualifications, ensuring accurate and organized record-keeping.</p>
+            </div>
+            <div class="grid__item">
+              <img src="assets/icons/events.png" alt="">
+              <h3>Events Management</h3>
+              <p>Organize and manage school events, such as parent-teacher meetings, sports days, and cultural activities, to ensure smooth planning and execution.</p>
+            </div>
+            <div class="grid__item">
+              <img src="assets/icons/homework.png" alt="">
+              <h3>Homework Management</h3>
+              <p>Simplify the assignment and submission of homework, facilitating effective communication between teachers, students, and parents.</p>
+            </div>
+            <div class="grid__item">
+              <img src="assets/icons/hostel.png" alt="">
+              <h3>Hostel Management</h3>
+              <p>Efficiently manage hostel facilities, including room allocation, inventory management, and student check-ins and check-outs.</p>
+            </div>
+            <div class="grid__item">
+              <img src="assets/icons/hr.png" alt="">
+              <h3>Human Resource Management</h3>
+              <p>Streamline HR-related tasks, including employee information management, attendance tracking, leave management, and payroll processing.</p>
+            </div>
+            <div class="grid__item">
+              <img src="assets/icons/library.png" alt="">
+              <h3>Library Management</h3>
+              <p>Digitally manage the school library, including cataloging books, tracking borrowing and returns, and generating reports on library usage.</p>
+            </div>
+            <div class="grid__item">
+              <img src="assets/icons/live.png" alt="">
+              <h3>Live Class Management</h3>
+              <p>Facilitate virtual learning by providing tools for conducting live online classes, including video conferencing, screen sharing, and interactive features.</p>
+            </div>
+            <div class="grid__item">
+              <img src="assets/icons/accounting.png" alt="">
+              <h3>Office Accounting Management</h3>
+              <p>Simplify financial management by tracking expenses, generating invoices, and managing payroll, ensuring accurate and efficient accounting processes.</p>
+            </div>
+            <div class="grid__item">
+              <img src="assets/icons/fee.png" alt="">
+              <h3>Students Accounting Management</h3>
+              <p>Effectively manage student fees, track payments, and generate financial reports related to student accounts.</p>
+            </div>
+            <div class="grid__item">
+              <img src="assets/icons/exam.png" alt="">
+              <h3>Online Exam Management</h3>
+              <p>Conduct and manage online examinations, including question paper creation, grading, and result generation, providing a seamless exam experience.</p>
+            </div>
+            <div class="grid__item">
+              <img src="assets/icons/reception.png" alt="">
+              <h3>Reception Management</h3>
+              <p>Streamline front desk operations, including visitor management, appointment scheduling, and inquiries handling, ensuring efficient reception services.</p>
+            </div>
+            <div class="grid__item">
+              <img src="assets/icons/transport.png" alt="">
+              <h3>Transport Management</h3>
+              <p>Manage school transportation, including route planning, vehicle tracking, and student transportation scheduling, ensuring safe and reliable transportation services.</p>
+            </div>
+            <div class="grid__item">
+              <img src="assets/icons/website.png" alt="">
+              <h3>School Front Website</h3>
+              <p>Enhance the school's website with customizable modules to showcase information, news, events, and important updates to visitors and parents.</p>
+            </div>
+            <div class="grid__item">
+              <img src="assets/icons/whatsapp.png" alt="">
+              <h3>WhatsApp Integration</h3>
+              <p>eamlessly integrate WhatsApp communication into your school management system, allowing for efficient communication with staff, and students.</p>
+            </div>
+            <div class="grid__item">
+              <img src="assets/icons/translate.png" alt="">
+              <h3>Multi Language Software</h3>
+              <p>A powerful multilingual school management solution that enables efficient management of student, staff, and parent information, along with comprehensive modules for attendance, library, accounting, exams, and more.</p>
+            </div>
+            <div class="grid__item">
+              <img src="assets/icons/communication.png" alt="">
+              <h3>Email Communication</h3>
+              <p>Efficiently manage communication within your school management system through a comprehensive mailbox feature. Stay connected with parents, staff, and students, allowing for seamless messaging.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="solutions">
+        <div class="advantages">
+          <div class="container">
+            <div class="advantages__intro">
+              <h2>Advantages of FeeFlow Technologies</h2>
+              <p>Say goodbye to manual paperwork, tedious processes, and scattered information. Embrace the advantages of FeeFlow Technologies and unlock the true potential of your educational institution.</p>
+            </div>
+            <div class="flex__container">
+              <div class="flex__item">
+                <div class="content">
+                  <h3>Admission Dashboard</h3>
+                  <p>Welcome to a hassle-free admission process. Our Student Admission Dashboard feature streamlines the journey from application to enrollment. Manage inquiries, applications, and approvals seamlessly in one place. Monitor each step in real time, ensuring a smooth transition for both students and administrators. With customizable workflows and automated notifications, stay on top of every admission detail. Whether you're managing multiple campuses or a single institution, our Admission Dashboard empowers you to make informed decisions and provide an exceptional onboarding experience.</p>
+                </div>
+                <div class="flex__media">
+                  <img src="images/student-admission.jpg" alt="" class="media">
+                </div>
+              </div>
+              <div class="flex__item">
+                <div class="content">
+                  <h3>Student Profiles Dashboard</h3>
+                  <p>Dive into a world of organized student information. Our Student Details List feature provides a centralized hub for all essential student data. From personal information to academic records and attendance history, everything you need is at your fingertips. Effortlessly manage admissions, track progress, and communicate with students and parents effectively. With an intuitive interface, you can easily search, update, and access student profiles whenever you need. Streamline student management with our Student Details List feature and unlock a new level of administrative convenience.</p>
+                </div>
+                <div class="flex__media">
+                  <img src="images/student-list.jpg" alt="" class="media">
+                </div>
+              </div>
+              <div class="flex__item">
+                <div class="content">
+                  <h3>Attendance Tracking</h3>
+                  <p>Say goodbye to manual attendance records. Our Attendance Management feature empowers schools to effortlessly track student and staff attendance. With a user-friendly interface, marking attendance becomes a breeze, whether you're on your computer or using our mobile app. Real-time insights allow administrators to identify patterns and make informed decisions. Embrace automation and enhance efficiency with our seamless Attendance Management solution.</p>
+                </div>
+                <div class="flex__media">
+                  <img src="images/student-attendance.jpg" alt="" class="media">
+                </div>
+              </div>
+              <div class="flex__item">
+                <div class="content">
+                  <h3>Effortless Fee Management</h3>
+                  <p>Revolutionize fee administration with our Fee Management feature. Say goodbye to paperwork and confusion. Easily create, manage, and track fee structures, payments, and overdue accounts all in one place. Empower parents with secure online payment options, making the fee submission process convenient and transparent. Gain insights into revenue streams, generate financial reports, and streamline reconciliation. With our user-friendly interface, handling complex fee scenarios becomes a breeze. Embrace efficiency, accuracy, and financial transparency with our Fee Management feature, ensuring a seamless financial journey for both institutions and parents.</p>
+                </div>
+                <div class="flex__media">
+                  <img src="images/fee-payment.jpg" alt="" class="media">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="why">
+        <div class="reasons">
+          <div class="container">
+            <div class="content__wrapper">
+              <h2>Reasons To Choose FeeFlow</h2>
+              <p>There are several compelling reasons to choose FeeFlow Technologies for your school's management needs:</p>
+            </div>
+  
+            <ol role="list">
+              <li>
+                <h3>Comprehensive Solution:</h3>
+                <p>FeeFlow offers a comprehensive School Management System that covers a wide range of modules and features. From student management to attendance tracking, online exams, library management, accounting, and more, our system provides a holistic approach to school administration, consolidating multiple functionalities into one streamlined platform.</p>
+              </li>
+              <li>
+                <h3>Cloud-Based and Accessible Anywhere:</h3>
+                <p>Our cloud-based system allows you to access your school's data and manage operations from anywhere with an internet connection. Whether you're in the school premises, at home, or on the go, you can conveniently oversee administrative tasks, monitor student progress, and communicate with stakeholders seamlessly.</p>
+              </li>
+              <li>
+                <h3>Data Security and Privacy:</h3>
+                <p>We prioritize the security and confidentiality of your data. With robust encryption, secure cloud infrastructure, access controls, and adherence to data protection regulations, we take extensive measures to ensure that your information remains protected from unauthorized access and privacy breaches.</p>
+              </li>
+              <li>
+                <h3>Customization and Scalability:</h3>
+                <p>We understand that every school is unique, and our School Management System is designed to be flexible and customizable. We work closely with you to tailor the system to your specific requirements, ensuring that it aligns with your school's workflows and caters to your unique needs. Moreover, our system is scalable, allowing it to grow and adapt as your institution expands.</p>
+              </li>
+              <li>
+                <h3>Excellent Customer Support:</h3>
+                <p>We are committed to providing exceptional customer support. Our dedicated support team is readily available to assist you with any inquiries, technical issues, or customization requests. We value your satisfaction and strive to deliver prompt and reliable support to ensure a smooth experience with our system.</p>
+              </li>
+              <li>
+                <h3>Continuous Updates and Improvements:</h3>
+                <p>FeeFlow Technologies is committed to continuous improvement. We regularly release software updates to enhance functionality, introduce new features, and address any issues. By choosing us, you benefit from our commitment to ongoing development and innovation, ensuring that your school stays up to date with the latest technological advancements.</p>
+              </li>
+              <li>
+                <h3>Proven Track Record:</h3>
+                <p>FeeFlow Technologies has a proven track record of serving schools and institutions across various educational sectors. We have garnered positive feedback and testimonials from satisfied clients who have experienced the benefits of our School Management System firsthand.</p>
+              </li>
+            </ol>
+            <p class="space-10">Choose FeeFlow Technologies as your partner in transforming school management. Experience the convenience, efficiency, and innovation that our system brings, empowering your institution to thrive in the digital age and provide an enriched educational experience for students, parents, and staff.</p>
+          </div>
+        </div>
+      </section>
+      <section class="support">
+        <div class="container">
+          <div class="support__flex">
+            <div class="support__content">
+              <h2>Recognized for Outstanding Support</h2>
+              <p>SoftMaji's dedicated team has been honored as key contributors and exceptional support providers in the industry. Our commitment to assisting clients has led to us being awarded the prestigious title of the "Best Support Provider." We take pride in going the extra mile to ensure that our clients receive unparalleled assistance and guidance. Our experts are always ready to address your inquiries, provide solutions, and ensure your experience with our products and services is nothing short of exceptional. Count on SoftMaji's award-winning support to be your reliable partner on your journey to success.</p>
+            </div>
+            <div class="media__container">
+              <img src="images/softmaji-support@2x.png" alt="">
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="pricing">
+        <div class="container">
+          <div class="pricing__meta">
+            <h2>Pricing</h2>
+            <p>Packages Sasta Hone Chahiye Janab Mehanga To Jamana Bhi Hai.</p>
+            <a href="#" class="btn__link gradient__blue">Start 30 Days Free Trial <ion-icon name="arrow-forward-outline"></ion-icon></a>
+          </div>
+          <hr>
+          <div class="pricing__table">
+            <div class="pricing__desc">
+              <div class="pricing__header">
+                <div class="btn__wrapper">
+                  <a class="btn__toggler gradient__peach selected" data-toggle="monthly_price">Monthly</a>
+                  <a class="btn__toggler" data-toggle="annual__price">Annual</a>
+                </div>
+                <p>Enjoy 30% off on Annual Purchase. Limited time offer!</p>
+              </div>
+              <ul class="pricing__list display__none">
+                <li>Student Limit</li>
+                <li>Parents Limit</li>
+                <li>Staff Limit</li>
+                <li>Teacher Limit</li>
+                <li>Web Application</li>
+                <li>Mobile Application</li>
+                <li>School Website</li>
+                <li>Attendance Management</li>
+                <li>ID Card Management</li>
+                <li>Certificate Management</li>
+                <li>Homework Management</li>
+                <li>Events Management</li>
+                <li>Hostel Management</li>
+                <li>HR Management</li>
+                <li>Library Management</li>
+                <li>Live Class Management</li>
+                <li>Office Accounting</li>
+                <li>Student Accounting</li>
+                <li>Online Exam Management</li>
+                <li>Reception Management</li>
+                <li>Transport Management</li>
+                <li>Live Class Management</li>
+                <li>Office Accounting</li>
+                <li>Bulk SMS, Email</li>
+                <li>Attachment Book</li>
+              </ul>
+            </div>
+            <div class="pricing__card">
+              <div class="pricing__header">
+                <h4 class="pricing__card__title">Pixy</h4>
+                <div class="pricing__inner">
+                  <span class="currency">Rs.</span>
+                  <span class="price" data-annual-price="5988">499/mo</span>
+                </div>
+                <p>Ideal for smaller institutions. Efficiently manage up to 1500 students.</p>
+              </div>
+              <ul class="pricing__list">
+                <li>
+                  <span>Student Limit</span>
+                  1500
+                </li>
+                <li>
+                  <span>Parents Limit</span>
+                  1500
+                </li>
+                <li>
+                  <span>Staff Limit</span>
+                  15
+                </li>
+                <li>
+                  <span>Teacher Limit</span>
+                  25
+                </li>
+                <li>
+                  <span>Web Application</span>
+                  Yes
+                </li>
+                <li>
+                  <span>Mobile Application</span>
+                  Yes
+                </li>
+                <li>
+                  <span>School Website</span>
+                  No
+                </li>
+                <li>
+                  <span>Attendance Management</span>
+                  Yes
+                </li>
+                <li>
+                  <span>ID Card Management</span>
+                  Yes
+                </li>
+                <li>
+                  <span>Certificate Management</span>
+                  Yes
+                </li>
+                <li>
+                  <span>Homework Management</span>
+                  No
+                </li>
+                <li>
+                  <span>Events Management</span>
+                  Yes
+                </li>
+                <li>
+                  <span>Hostel Management</span>
+                  No
+                </li>
+                <li>
+                  <span>HR Management</span>
+                  No
+                </li>
+                <li>
+                  <span>Library Management</span>
+                  No
+                </li>
+                <li>
+                  <span>Live Class Management</span>
+                  No
+                </li>
+                <li>
+                  <span>Office Accounting</span>
+                  Yes
+                </li>
+                <li>
+                  <span>Student Accounting</span>
+                  Yes
+                </li>
+                <li>
+                  <span>Online Exam Management</span>
+                  Yes
+                </li>
+                <li>
+                  <span>Reception Management</span>
+                  Yes
+                </li>
+                <li>
+                  <span>Transport Management</span>
+                  Yes
+                </li>
+                <li>
+                  <span>Live Class Management</span>
+                  No
+                </li>
+                <li>
+                  <span>Office Accounting</span>
+                  Yes
+                </li>
+                <li>
+                  <span>Bulk SMS, Email</span>
+                  No
+                </li>
+                <li>
+                  <span>Attachment Book</span>
+                  Yes
+                </li>
+              </ul>
+              <a href="" class="cta__link">Get Started <ion-icon name="arrow-forward-outline"></ion-icon></a>
+            </div>
+            <div class="pricing__card">
+              <div class="pricing__header">
+                <h4 class="pricing__card__title">Neu</h4>
+                <div class="pricing__inner">
+                  <span class="currency">Rs.</span>
+                  <span class="price" data-annual-price="9588">799/mo</span>
+                </div>
+                <p>Perfect for mid-sized schools. Seamlessly handle up to 2500 students.</p>
+              </div>
+              <ul class="pricing__list">
+                <li>
+                  <span>Student Limit</span>
+                  2500
+                </li>
+                <li>
+                  <span>Parents Limit</span>
+                  2500
+                </li>
+                <li>
+                  <span>Staff Limit</span>
+                  30
+                </li>
+                <li>
+                  <span>Teacher Limit</span>
+                  50
+                </li>
+                <li>
+                  <span>Web Application</span>
+                  Yes
+                </li>
+                <li>
+                  <span>Mobile Application</span>
+                  Yes
+                </li>
+                <li>
+                  <span>School Website</span>
+                  No
+                </li>
+                <li>
+                  <span>Attendance Management</span>
+                  Yes
+                </li>
+                <li>
+                  <span>ID Card Management</span>
+                  Yes
+                </li>
+                <li>
+                  <span>Certificate Management</span>
+                  Yes
+                </li>
+                <li>
+                  <span>Homework Management</span>
+                  No
+                </li>
+                <li>
+                  <span>Events Management</span>
+                  Yes
+                </li>
+                <li>
+                  <span>Hostel Management</span>
+                  No
+                </li>
+                <li>
+                  <span>HR Management</span>
+                  Yes
+                </li>
+                <li>
+                  <span>Library Management</span>
+                  Yes
+                </li>
+                <li>
+                  <span>Live Class Management</span>
+                  Yes
+                </li>
+                <li>
+                  <span>Office Accounting</span>
+                  Yes
+                </li>
+                <li>
+                  <span>Student Accounting</span>
+                  Yes
+                </li>
+                <li>
+                  <span>Online Exam Management</span>
+                  Yes
+                </li>
+                <li>
+                  <span>Reception Management</span>
+                  Yes
+                </li>
+                <li>
+                  <span>Transport Management</span>
+                  Yes
+                </li>
+                <li>
+                  <span>Live Class Management</span>
+                  Yes
+                </li>
+                <li>
+                  <span>Office Accounting</span>
+                  Yes
+                </li>
+                <li>
+                  <span>Bulk SMS, Email</span>
+                  Yes
+                </li>
+                <li>
+                  <span>Attachment Book</span>
+                  Yes
+                </li>
+              </ul>
+              <a href="" class="cta__link gardient__green">Get Started <ion-icon name="arrow-forward-outline"></ion-icon></a>
+            </div>
+            <div class="pricing__card">
+              <div class="pricing__header">
+                <h4 class="pricing__card__title">Algon</h4>
+                <div class="pricing__inner">
+                  <span class="currency">Rs.</span>
+                  <span class="price" data-annual-price="11988">999/mo</span>
+                </div>
+                <p>Tailored for larger institutions. Easily oversee up to 5000 students.</p>
+              </div>
+              <ul class="pricing__list">
+                <li>
+                  <span>Student Limit</span>
+                  5000
+                </li>
+                <li>
+                  <span>Parents Limit</span>
+                  5000
+                </li>
+                <li>
+                  <span>Staff Limit</span>
+                  50
+                </li>
+                <li>
+                  <span>Teacher Limit</span>
+                  70
+                </li>
+                <li>
+                  <span>Web Application</span>
+                  Yes
+                </li>
+                <li>
+                  <span>Mobile Application</span>
+                  Yes
+                </li>
+                <li>
+                  <span>School Website</span>
+                  Yes
+                </li>
+                <li>
+                  <span>Attendance Management</span>
+                  Yes
+                </li>
+                <li>
+                  <span>ID Card Management</span>
+                  Yes
+                </li>
+                <li>
+                  <span>Certificate Management</span>
+                  Yes
+                </li>
+                <li>
+                  <span>Homework Management</span>
+                  Yes
+                </li>
+                <li>
+                  <span>Events Management</span>
+                  Yes
+                </li>
+                <li>
+                  <span>Hostel Management</span>
+                  Yes
+                </li>
+                <li>
+                  <span>HR Management</span>
+                  Yes
+                </li>
+                <li>
+                  <span>Library Management</span>
+                  Yes
+                </li>
+                <li>
+                  <span>Live Class Management</span>
+                  Yes
+                </li>
+                <li>
+                  <span>Office Accounting</span>
+                  Yes
+                </li>
+                <li>
+                  <span>Student Accounting</span>
+                  Yes
+                </li>
+                <li>
+                  <span>Online Exam Management</span>
+                  Yes
+                </li>
+                <li>
+                  <span>Reception Management</span>
+                  Yes
+                </li>
+                <li>
+                  <span>Transport Management</span>
+                  Yes
+                </li>
+                <li>
+                  <span>Live Class Management</span>
+                  Yes
+                </li>
+                <li>
+                  <span>Office Accounting</span>
+                  Yes
+                </li>
+                <li>
+                  <span>Bulk SMS, Email</span>
+                  Yes
+                </li>
+                <li>
+                  <span>Attachment Book</span>
+                  Yes
+                </li>
+              </ul>
+              <a href="" class="cta__link">Get Started <ion-icon name="arrow-forward-outline"></ion-icon></a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="testimonials">
+        <div class="container">
+          <div class="header">
+            <h2>What People Say</h2>
+            <p>Verified reviews from Google & Trustpilot</p>
+          </div>
+          <swiper-container class="mySwiper" loop="true" pagination="true" pagination-clickable="true" space-between="30" slides-per-view="3"  navigation="true" keyboard="true" mousewheel="true">
+            <swiper-slide>
+              <div class="card">
+                <p>The FeeFlow Technologies software has transformed our school management. It's incredibly user-friendly and efficient, making administrative tasks a breeze. I highly recommend it!</p>
+              </div>
+              <div class="card__flex">
+                <div class="avatar">
+                  <img src="images/avatar1-sm.png" alt="">
+                </div>
+                <div class="card__info">
+                  <h5>Sneha Patel</h5>
+                  <p class="card__user">Principal, Happy Public School</p>
+                </div>
+              </div>
+            </swiper-slide>
+            <swiper-slide>
+              <div class="card">
+                <p>FeeFlow Technologies has revolutionized how we manage student fees. It's simple, secure, and the support team is always ready to help. A game-changer for our institution!</p>
+              </div>
+              <div class="card__flex">
+                <div class="avatar">
+                  <img src="images/avatar2-sm.png" alt="">
+                </div>
+                <div class="card__info">
+                  <h5>Rajesh Sharma</h5>
+                  <p class="card__user">Administrator, Bright Kids School</p>
+                </div>
+              </div>
+            </swiper-slide>
+            <swiper-slide>
+              <div class="card">
+                <p>We've been using FeeFlow Technologies for a year, and it has simplified our school operations significantly. From attendance to financial tracking, it's a complete package!</p>
+              </div>
+              <div class="card__flex">
+                <div class="avatar">
+                  <img src="images/avatar3-sm.png" alt="">
+                </div>
+                <div class="card__info">
+                  <h5>Priya Gupta</h5>
+                  <p class="card__user">Director, Future Scholars Academy</p>
+                </div>
+              </div>
+            </swiper-slide>
+            <swiper-slide>
+              <div class="card">
+                <p>FeeFlow Technologies has made a significant impact on our school management efficiency. The system is intuitive, and the team's support has been outstanding.</p>
+              </div>
+              <div class="card__flex">
+                <div class="avatar">
+                  <img src="images/avatar4-sm.png" alt="">
+                </div>
+                <div class="card__info">
+                  <h5>Amit Desai</h5>
+                  <p class="card__user">Principal, Global Harmony School</p>
+                </div>
+              </div>
+            </swiper-slide>
+            <swiper-slide>
+              <div class="card">
+                <p>FeeFlow Technologies has exceeded our expectations. It has simplified fee management, and the software's features are perfectly tailored for schools.</p>
+              </div>
+              <div class="card__flex">
+                <div class="avatar">
+                  <img src="images/avatar5-sm.png" alt="">
+                </div>
+                <div class="card__info">
+                  <h5>Anjali Verma</h5>
+                  <p class="card__user">Administrator, Blossom Academy</p>
+                </div>
+              </div>
+            </swiper-slide>
+          </swiper-container>
+        </div>
+      </section>
+      <section id="crew">
+        <div class="container">
+          <div class="crew">
+            <div class="crew__content">
+              <h2>FeeFlow's Desi Avengers</h2>
+              <p>We Code, We Laugh, We Make School Management Superpower Fun!</p>
+            </div>
+            <swiper-container class="mySwiper1" init="false" loop="true" pagination="false" centered-slides="true">
+              <swiper-slide>
+                <img src="images/launch-event-1@2x.webp" alt="" class="swiper__media">
+              </swiper-slide>
+              <swiper-slide>
+                <img src="images/launch-event-2@2x.webp" alt="" class="swiper__media">
+              </swiper-slide>
+              <swiper-slide>
+                <img src="images/launch-event-3@2x.webp" alt="" class="swiper__media">
+              </swiper-slide>
+              <swiper-slide>
+                <img src="images/launch-event-1@2x.webp" alt="" class="swiper__media">
+              </swiper-slide>
+              <swiper-slide>
+                <img src="images/launch-event-2@2x.webp" alt="" class="swiper__media">
+              </swiper-slide>
+              <swiper-slide>
+                <img src="images/launch-event-3@2x.webp" alt="" class="swiper__media">
+              </swiper-slide>
+            </swiper-container>
+          </div>
+        </div>
+      </section>
+      <section id="about">
+        <div class="container">
+          <div class="about__content">
+            <h2>About FeeFlow Technologies</h2>
+            <h3>Welcome to FeeFlow Technologies - Your Trusted Partner for Cloud-Based School Management Software in India</h3>
+            <p>At FeeFlow Technologies, we understand the complexities schools and educational institutions face in managing their day-to-day operations efficiently. That's why we offer a comprehensive cloud-based School Management Software designed to streamline administrative tasks, enhance communication, and empower educational institutions across India. With our user-friendly and feature-rich software, schools can unlock their true potential and focus on providing quality education.</p>
+            <div class="space-20"></div>
+            <h2>Revolutionizing School Management with 22+ Modules</h2>
+            <p>Our cloud-based School Management Software comes equipped with 22+ modules, ensuring a seamless experience for every aspect of school administration. Whether you need to manage students, parents, staff, or teachers, our software has you covered. Here are just a few of the powerful modules included:</p>
+            <ol role="list">
+              <li>Student Management: Effortlessly handle student admissions, records, attendance, and academic progress tracking.</li>
+              <li>Parents Management: Foster strong parent-school collaboration by enabling easy communication and access to student-related information.</li>
+              <li>Staff Management: Streamline staff attendance, payroll, and performance evaluation processes for efficient human resource management.</li>
+              <li>Teacher Management: Empower teachers with tools for lesson planning, assignments, grading, and communication with students and parents.</li>
+              <li>Web Application for PC: Access the software from any web-enabled device, allowing easy management from desktop computers.</li>
+              <li>Mobile Application: Stay connected on the go with dedicated mobile apps for students, parents, teachers, accountants, librarians, and receptionists.</li>
+              <li>School Front Website Management: Create and manage a dynamic website to showcase your institution's achievements, events, and facilities.</li>
+              <li>Attendance Management: Automate student and employee attendance tracking, reducing manual effort and ensuring accuracy.</li>
+              <li>ID Card Management: Generate and manage ID cards for students and employees, promoting a secure and organized environment.</li>
+              <li>Certificate Management: Simplify the process of issuing certificates to students and employees, ensuring efficiency and reliability.</li>
+              <li>Homework Management: Enable teachers to assign and manage homework online, promoting student engagement and parental involvement.</li>
+              <li>Events Management: Organize and promote school events, such as annual days, sports meets, and cultural festivals, with ease.</li>
+              <li>Hostel Management: Streamline hostel management tasks, including room allocation, attendance, mess management, and more.</li>
+              <li>HR Management: Effectively manage human resources, including recruitment, leave tracking, performance appraisal, and payroll.</li>
+              <li>Library Management: Digitize library operations, allowing easy book cataloging, circulation, and tracking of library resources.</li>
+              <li>Live Class Management: Conduct live virtual classes and interactive sessions, promoting remote learning opportunities.</li>
+              <li>Office Accounting Management: Simplify financial management with comprehensive accounting tools tailored to the needs of educational institutions.</li>
+              <li>Student Accounting Management: Track student fee payments, generate fee receipts, and manage financial records effortlessly.</li>
+              <li>Online Exam Management: Conduct online exams securely, with features for question bank creation, result generation, and analysis.</li>
+              <li>Reception Management: Efficiently handle visitor management, inquiries, and front desk operations for a professional experience.</li>
+              <li>Transport Management: Manage school transportation routes, vehicle tracking, and student transport records for enhanced safety.</li>
+              <li>Bulk SMS, Email: Send timely updates, notifications, and reminders to students, parents, and staff through integrated communication channels.</li>
+              <li>Attachment Book: Seamlessly attach documents, files, and multimedia resources to enrich communication and collaboration.</li>
+            </ol>
+            <h2>Boost Efficiency, Collaboration, and Success with FeeFlow Technologies</h2>
+            <p>At FeeFlow Technologies, we are committed to helping schools and educational institutions thrive in the digital era. Our cloud-based School Management Software provides an all-in-one solution that automates administrative tasks, fosters effective communication, and enhances collaboration among stakeholders.</p>
+            <p>With our SEO-optimized website content and comprehensive suite of features, FeeFlow Technologies is your reliable partner in transforming school management. Join hands with us today and unlock the potential of your institution. Contact us now to schedule a personalized demo and experience the power of FeeFlow Technologies!</p>
+          </div>
+        </div>
+      </section>
+      <section id="screenshots" class="container">
+        <div class="slider">
+          <div class="slider__content">
+            <h2>A Visual Tour of FeeFlow's Android App</h2>
+            <p>Experience Efficiency with FeeFlow's App Screenshots</p>
+            <div class="appstore">
+              <a href="https://play.google.com/store/apps/details?id=com.feeflow.softmaji&hl=en&gl=US&pli=1" class="appstore__link">
+                <img src="https://feeflow.in/assets/img/app/play-store.png" alt="">
+              </a>
+            </div>
+          </div>
+          <swiper-container class="mySwiper" pagination="true" pagination-clickable="true" slides-per-view="4" space-between="20" centered-slides="true" initial-slide="3">
+            <swiper-slide>
+              <img src="images/screen1@2x.jpg" alt="" class="swiper__media">
+            </swiper-slide>
+            <swiper-slide>
+              <img src="images/screen2@2x.jpg" alt="" class="swiper__media">
+            </swiper-slide>
+            <swiper-slide>
+              <img src="images/screen3@2x.jpg" alt="" class="swiper__media">
+            </swiper-slide>
+            <swiper-slide>
+              <img src="images/screen4@2x.jpg" alt="" class="swiper__media">
+            </swiper-slide>
+            <swiper-slide>
+              <img src="images/screen5@2x.jpg" alt="" class="swiper__media">
+            </swiper-slide>
+            <swiper-slide>
+              <img src="images/screen6@2x.jpg" alt="" class="swiper__media">
+            </swiper-slide>
+            <swiper-slide>
+              <img src="images/screen7@2x.jpg" alt="" class="swiper__media">
+            </swiper-slide>
+            <swiper-slide>
+              <img src="images/screen8@2x.jpg" alt="" class="swiper__media">
+            </swiper-slide>
+          </swiper-container>
+        </div>
+      </section>
+      <section>
+        <div class="overlay__container">
+          <div class="container">
+            <div class="overlay__flex___container">
+              <div class="overlay__flex__item">
+                <ion-icon name="help-buoy-outline"></ion-icon>
+                <h2>24/7 Support</h2>
+                <p>Enjoy round-the-clock assistance from our dedicated support team, ensuring your queries are resolved promptly.</p>
+              </div>
+              <div class="overlay__flex__item">
+                <ion-icon name="construct-outline"></ion-icon>
+                <h2>Reg. Upgrades</h2>
+                <p>Receive regular updates and new features to keep your software at the forefront of technology.</p>
+              </div>
+              <div class="overlay__flex__item">
+                <ion-icon name="cog-outline"></ion-icon>
+                <h2>Customizable</h2>
+                <p>Tailor the software to your institution's unique needs, ensuring an optimized management experience.</p>
+              </div>
+              <div class="overlay__flex__item">
+                <ion-icon name="lock-closed-outline"></ion-icon>
+                <h2>Data Security</h2>
+                <p>Rest easy knowing your sensitive school data is protected with advanced security measures.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="brand container">
+          <div class="brand__content">
+            <h2>Brands Collaboration</h2>
+            <p>FeeFlow connected with these brands in and as.</p>
+          </div>
+          <div class="brand__logo">
+            <img src="images/brand-collaboration.webp" alt="">
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer__wrapper">
+      <div class="container">
+        <div class="footer__flex__container">
+          <div class="footer__flex__item">
+            <img src="assets/feeflow-light@2x.webp" alt="" class="footer__brand__logo">
+            <p class="brand__text">FeeFlow Technologies is a leading provider of innovative school management software. With a deep understanding of the challenges faced by educational institutions, we have developed a powerful cloud-based platform that simplifies administrative tasks and empowers educators to focus on student success.</p>
+          </div>
+          <div class="footer__flex__item">
+            <h4 class="widget__title">Quick link</h4>
+            <ul class="footer__menu">
+              <li>
+                <a href="#">FAQ</a>
+              </li>
+              <li>
+                <a href="#">Pricing</a>
+              </li>
+              <li>
+                <a href="#">Careers</a>
+              </li>
+              <li>
+                <a href="#">How To's</a>
+              </li>
+              <li>
+                <a href="#">Sitemap</a>
+              </li>
+              <li>
+                <a href="#">Download App</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__flex__item">
+            <h4 class="widget__title">Company</h4>
+            <ul class="footer__menu">
+              <li>
+                <a href="#">Blogs</a>
+              </li>
+              <li>
+                <a href="#">About Us</a>
+              </li>
+              <li>
+                <a href="#">Contact Us</a>
+              </li>
+              <li>
+                <a href="#">Privacy Policy</a>
+              </li>
+              <li>
+                <a href="#">Refund Policy</a>
+              </li>
+              <li>
+                <a href="#">Terms & Conditions</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__flex__item">
+            <h4 class="widget__title">Contacts</h4>
+            <div class="contact__wrapper">
+              <p>SoftMaji InfoTech Private Limited</p>
+              <p>CIN U72900UP2021PTC146111</p>
+              <address>
+                Address: 4/40 Vipul Khand, Gomti Nagar <br />
+                Lucknow, Uttar Pradesh 226010
+              </address>
+              <p>Mobile: 01169650106</p>
+              <p>Email: hello@feeflow.in</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script>
+      window.addEventListener('scroll', function() {
+        if (window.scrollY > 100) {
+          document.getElementById('nav-menu').classList.add('scrolled');
+        } else {
+          document.getElementById('nav-menu').classList.remove('scrolled');
+        }
+      });
+    </script>
+    <script type="module" src="js/main.js"></script>
+    <script type="module" src="js/price.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    <script type="module" src="js/swiper.js"></script>
+    <script src="https://unpkg.com/ionicons@latest/dist/ionicons.js"></script>
+</body>
+</html>
